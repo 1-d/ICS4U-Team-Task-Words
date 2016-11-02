@@ -1,7 +1,10 @@
+Words Project
+Aaron Cheung + Jason Yuen
+2016-11-02
 
 Link: http://moodle2.yrdsb.ca/mod/page/view.php?id=1024948
 
-Deadline: November 2, 2016
+Deadline: November 3, 2016
 
 # Words
 
