@@ -114,7 +114,16 @@ public class WordBattle extends World
         //System.out.printf("Time: %d, Words: %d\n",timeLeft,words.size());
         if (timeLeft > 0) {
             timeLeft--;
+            if (Greenfoot.isKeyDown("left"))
+            {
+                timeLeft--;
+            }
+            if (Greenfoot.isKeyDown("right"))
+            {
+                timeLeft++;
+            }
         }
+        
         else {
             // change of phase
             if (phase == 0) {
