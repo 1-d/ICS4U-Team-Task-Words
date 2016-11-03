@@ -19,8 +19,8 @@ public class WordBattle extends World
     final int rowSize = 6;                          // number of Words in a row
     final int rowSep = 40;                          // each row is separated by this many units
     final int colSep = 150;                         // the words in a row are separated by this many units
-    int wordCount = 78;                             // number of Word actors in total
-    int wordCutoff = 66;                            // all Word actors after this rank get recycled
+    int wordCount = 90;                             // number of Word actors in total
+    int wordCutoff = 78;                            // all Word actors after this rank get recycled
 
     ArrayList<Word> words = new ArrayList<Word>();  // the Word actors are conveniently stored here
 
