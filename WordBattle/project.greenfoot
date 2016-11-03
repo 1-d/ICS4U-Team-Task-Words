@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.Word.superclass=greenfoot.Actor
+class.WordBattle.image=sandstone.jpg
 class.WordBattle.superclass=greenfoot.World
 class.WordGenerator.superclass=
 dependency1.from=Word
@@ -13,8 +14,8 @@ dependency3.to=WordGenerator
 dependency3.type=UsesDependency
 mainWindow.height=820
 mainWindow.width=1205
-mainWindow.x=47
-mainWindow.y=57
+mainWindow.x=79
+mainWindow.y=89
 package.numDependencies=3
 package.numTargets=3
 project.charset=UTF-8
