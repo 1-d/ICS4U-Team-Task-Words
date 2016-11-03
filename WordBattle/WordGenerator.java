@@ -10,7 +10,7 @@ import java.util.Collections;
  * After initialization, it returns a random arrangement of words with the getWord() method.
  * 
  * @author Jason Yuen
- * @version October 17, 2016
+ * @version November 3, 2016
  */
 public class WordGenerator
 {
@@ -24,7 +24,6 @@ public class WordGenerator
     /**
      * Initializes the stack with the list of words
      */
-
     public WordGenerator()
     {
         // get the input in a suitable format
@@ -48,8 +47,11 @@ public class WordGenerator
     }
 
     /**
-     * Gets a random word from a stack
-     * When the stack runs out, the words get shuffled and recycled
+     * Gets a random word from a stack.
+     * When the stack runs out, the words get shuffled and recycled.
+     * This way, it is unlikely to draw the same word twice.
+     * 
+     * @return A randomly chosen words
      */
     public String getWord() {
         // possibly done with the list
