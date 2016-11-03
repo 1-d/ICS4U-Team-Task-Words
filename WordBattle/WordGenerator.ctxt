@@ -4,5 +4,5 @@ comment0.target=WordGenerator()
 comment0.text=\r\n\ Initializes\ the\ stack\ with\ the\ list\ of\ words\r\n
 comment1.params=
 comment1.target=java.lang.String\ getWord()
-comment1.text=\r\n\ Gets\ a\ random\ word\ from\ a\ stack\r\n\ When\ the\ stack\ runs\ out,\ the\ words\ get\ shuffled\ and\ recycled\r\n
+comment1.text=\r\n\ Gets\ a\ random\ word\ from\ a\ stack.\r\n\ When\ the\ stack\ runs\ out,\ the\ words\ get\ shuffled\ and\ recycled.\r\n\ This\ way,\ it\ is\ unlikely\ to\ draw\ the\ same\ word\ twice.\r\n\ \r\n\ @return\ A\ randomly\ chosen\ words\r\n
 numComments=2

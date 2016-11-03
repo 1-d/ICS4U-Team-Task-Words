@@ -3,10 +3,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * This World generates a bunch of Word actors and
+ * This World generates a word battle scene.
+ * Many words appear on the screen and compete to live as long as possible.
+ * The top word will occupy the most space.
+ * However, as a word ages, its font size will decrease!
+ * The resulting movement is unpredictable and fun to watch.
  * 
- * @author Jason Yuen
- * @version October 17, 2016
+ * @author Jason Yuen, Aaron Cheung
+ * @version November 3, 2016
  */
 public class WordBattle extends World
 {
@@ -43,6 +47,12 @@ public class WordBattle extends World
     {    
         // Create a new world with 960x640 cells with a cell size of 1x1 pixels.
         super(960, 640, 1);
+        
+        // create the helper text
+        addObject(new HelperText("Welcome to WordBattle!"), 480, 545);
+        addObject(new HelperText("Left: Speed up the animation"), 480, 570);
+        addObject(new HelperText("Right: Freeze the animation"), 480, 595);
+        addObject(new HelperText("Please enjoy the project!"), 480, 620);
 
         // create the list
         for (int i=0; i<wordCount; i++) {
@@ -64,6 +74,7 @@ public class WordBattle extends World
 
     /**
      * Move the words to their appropriate locations.
+     * The locations depend on the position in the sorted ArrayList.
      */
     private void moveWords()
     {
@@ -107,23 +118,23 @@ public class WordBattle extends World
     /**
      * Counts down the timeLeft.
      * When timeLeft is 0, a phase transition occurs.
+     * The "left" key speeds up the countdown.
+     * The "right" key freezes the countdown.
      */
     public void act()
     {
         // action depends on "phase" and "timeLeft"
-        //System.out.printf("Time: %d, Words: %d\n",timeLeft,words.size());
         if (timeLeft > 0) {
+            // wait until the next phase
             timeLeft--;
-            if (Greenfoot.isKeyDown("left"))
-            {
-                timeLeft--;
+            if (Greenfoot.isKeyDown("left")) {
+                timeLeft-=2;
             }
-            if (Greenfoot.isKeyDown("right"))
-            {
+            if (Greenfoot.isKeyDown("right")) {
+                // freeze by undoing the decrement
                 timeLeft++;
             }
         }
-        
         else {
             // change of phase
             if (phase == 0) {

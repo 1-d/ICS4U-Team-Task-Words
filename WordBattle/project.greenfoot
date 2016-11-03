@@ -1,9 +1,9 @@
 #Greenfoot properties
-#Thu Nov 03 14:01:25 EDT 2016
+#Thu Nov 03 14:29:19 EDT 2016
 target3.editor.y=-8
 target3.editor.x=-8
-target2.naviview.expanded=true
 target2.name=Word
+target2.naviview.expanded=true
 simulation.speed=50
 class.WordBattle.superclass=greenfoot.World
 target2.editor.height=1000
@@ -17,8 +17,8 @@ target3.x=70
 target1.type=ClassTarget
 target3.type=ClassTarget
 target2.y=10
-target2.x=170
 package.numTargets=3
+target2.x=170
 dependency3.to=WordGenerator
 target1.height=50
 dependency2.type=UsesDependency
@@ -27,14 +27,15 @@ target2.height=50
 target1.x=70
 target1.naviview.expanded=true
 dependency1.to=WordBattle
-target3.height=50
 target1.editor.height=1000
+target3.height=50
 target1.showInterface=false
 class.Word.superclass=greenfoot.Actor
 target1.name=WordBattle
 target3.name=WordGenerator
 target3.editor.width=1296
 mainWindow.width=1205
+class.HelperText.superclass=greenfoot.Actor
 target1.editor.y=-8
 target1.editor.x=-8
 target3.naviview.expanded=true

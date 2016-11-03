@@ -9,7 +9,7 @@ import java.awt.Color;
  * Whenever the fitness is too low, the Word will be forced to fade and eventually the actor gets a new String.
  * 
  * @author Jason Yuen
- * @version October 17, 2016
+ * @version November 3, 2016
  */
 public class Word extends Actor implements Comparable<Word>
 {
@@ -30,7 +30,7 @@ public class Word extends Actor implements Comparable<Word>
     private double fitness;             // how well a word is doing, higher is better
     final private double luckiness;     // luckiness of the actor -- a tiebreaker
 
-    final float fadeFactor = 0.02f;     // how quickly this actor would fade away
+    final float fadeFactor = 0.05f;     // how quickly this actor would fade away
     private float fade;                 // transparency -- decreases to 0f when action=1
 
     /**
@@ -69,6 +69,7 @@ public class Word extends Actor implements Comparable<Word>
 
     /**
      * Set the final position of the actor.
+     * The actor will smoothly move to this location.
      */
     public void setFinalPosition(int x, int y)
     {
@@ -109,7 +110,8 @@ public class Word extends Actor implements Comparable<Word>
     }
 
     /**
-     * Redraw the Greenfoot Image according to its variables.
+     * Redraw the Greenfoot Image according to its current variables.
+     * Certain variables, such as word, fontSize, fade, are used.
      */
     private void redraw()
     {
@@ -147,6 +149,9 @@ public class Word extends Actor implements Comparable<Word>
         }
     }
     
+    /**
+     * Create a function which allows for easy sorting.
+     */
     @Override
     public int compareTo(Word w2)
     {
