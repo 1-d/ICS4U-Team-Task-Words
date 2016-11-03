@@ -8,5 +8,5 @@ PROJECT TITLE: Word Battle
 PURPOSE OF PROJECT: To demonstrate knowledge of data structures
 VERSION or DATE: October 17, 2016
 HOW TO START THIS PROJECT: Compile and Run?
-AUTHORS: Jason Yuen
+AUTHORS: Jason Yuen, Aaron Cheung
 USER INSTRUCTIONS: Compile and Run
