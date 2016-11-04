@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-import java.io.File;
 
 import java.util.Stack;
 import java.util.Collections;
@@ -10,7 +9,7 @@ import java.util.Collections;
  * After initialization, it returns a random arrangement of words with the getWord() method.
  * 
  * @author Jason Yuen
- * @version November 3, 2016
+ * @version November 4, 2016
  */
 public class WordGenerator
 {
@@ -27,15 +26,7 @@ public class WordGenerator
     public WordGenerator()
     {
         // get the input in a suitable format
-        Scanner sc = null;
-        try {
-            sc = new Scanner(new File(WORD_PATH));
-        } catch (Exception ex) {
-            // an exception happened
-            System.err.println("The word file cannot be found!");
-            System.err.println("Full directory searched: " + WORD_PATH);
-            ex.printStackTrace();
-        }
+        Scanner sc = new Printer().getTextFile(WORD_PATH);
 
         // read all of the words and store in a stack
         while (sc.hasNext()) {

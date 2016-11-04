@@ -48,6 +48,15 @@ public class WordBattle extends World
         // Create a new world with 960x640 cells with a cell size of 1x1 pixels.
         super(960, 640, 1);
         
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program. That is: create the initial
+     * objects and add them to the world.
+     */
+    private void prepare()
+    {
         // create the helper text
         addObject(new HelperText("Welcome to WordBattle!"), 480, 545);
         addObject(new HelperText("Left: Speed up the animation"), 480, 570);

@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=fileName
+comment0.target=java.util.Scanner\ getTextFile(java.lang.String)
+comment0.text=\r\n\ Opens\ a\ text\ file\ inside\ the\ package\ folder\ and\ creates\ a\ scanner\ to\ read\ it\ which\ is\ returned.\ Works\ for\ text\ files\ inside\ jar\ file.\r\n\ \r\n\ @param\ name\ The\ name\ of\ the\ text\ file\r\n\ @return\ A\ Scanner\ that\ is\ reading\ the\ contents\ of\ the\ text\ file.\r\n
+numComments=1
